@@ -1,0 +1,4 @@
+repository "Gra_Gołąb@kuba_golab@cloud"
+  path "/"
+    br "/main"
+    co "/main"
