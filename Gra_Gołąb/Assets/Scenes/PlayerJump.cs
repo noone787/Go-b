@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class PlayerJump : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        Debug.Log("test");
-    }
+    public bool IsOnGround = false;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void Skok(){
+        if (Input.GetKeyDown("w") && IsOnGround == true){
+            Debug.Log("sdvsdfvsdfv");
+        }
     }
+    
 }
