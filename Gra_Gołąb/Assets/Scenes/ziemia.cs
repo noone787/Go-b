@@ -1,21 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using Unity.VisualScripting;
 using UnityEngine;
 
 
 public class ziemia : MonoBehaviour
 {
+    public bool IsOnGround = false;
     
-    void OnControllerColliderHit(ControllerColliderHit hit){
-
-        Rigidbody body = hit.collider.attachedRigidbody;
-        if (body.useGravity == true){
-            gameObject.GetComponent<PlayerJump>().IsOnGround = true;
-        }
-        else {
-            gameObject.GetComponent<PlayerJump>().IsOnGround = false;
-        }
-
+    void OnCollisionEnter2D(){
+        
+        IsOnGround = true;
+        
     }
+    void OnCollisionExit2D(){
+        
+        IsOnGround = false;
+        
+    }
+    
+    
 }
