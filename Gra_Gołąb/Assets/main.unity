@@ -229,8 +229,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f180a4fedd8c948a1d7d8e027b73e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player_Position: {fileID: 1021244256}
-  Tr: {fileID: 0}
 --- !u!1 &1021244254
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,7 +401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1673dbd709483a544bd278317477fe87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpforce: 10
+  jumpforce: 7
   ziemia: {fileID: 1830575256}
 --- !u!1 &1028895618
 GameObject:
@@ -705,6 +703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsOnGround: 0
+  AirJump: 1
 --- !u!1 &2002027533
 GameObject:
   m_ObjectHideFlags: 0

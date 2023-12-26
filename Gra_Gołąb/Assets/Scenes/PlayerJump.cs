@@ -16,15 +16,25 @@ public class PlayerJump : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        
     }
     
     public ziemia ziemia;
-
+    
     // Faktyczny Skok
 
     void Update(){
-        if (ziemia.IsOnGround == true && Input.GetKeyDown(KeyCode.Space)) {
-            rb.AddForce(Vector2.up * jumpforce,ForceMode2D.Impulse);
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            if (ziemia.IsOnGround == true){
+                rb.AddForce(Vector2.up * jumpforce,ForceMode2D.Impulse);
+            }
+            else if (ziemia.AirJump > 0){
+                rb.AddForce(Vector2.up * jumpforce,ForceMode2D.Impulse);
+                ziemia.AirJump = ziemia.AirJump - 1;
+            }
+            else{
+                
+            }
         }
     }
     

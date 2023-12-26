@@ -8,9 +8,9 @@ using UnityEngine;
 public class ziemia : MonoBehaviour
 {
     public bool IsOnGround = false;
-    
+    public int AirJump = 1;
     void OnCollisionEnter2D(){
-        
+        AirJump = 1;
         IsOnGround = true;
         
     }
