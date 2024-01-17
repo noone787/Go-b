@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        var movement = Input.GetAxis("Horizontal"); 
+        var movement = Input.GetAxisRaw("Horizontal"); 
         transform.position += new Vector3(movement,0,0) * Time.deltaTime * MovementSpeed;
     }
 }
