@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Data.Common;
 using System.Runtime.Serialization.Formatters;
+using System.Threading;
 using UnityEditor.U2D.Animation;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -24,6 +25,7 @@ public class PlayerJump : MonoBehaviour
     // Faktyczny Skok
 
     void Update(){
+        
         if (Input.GetKeyDown(KeyCode.Space)) {
             if (ziemia.IsOnGround == true){
                 rb.AddForce(Vector2.up * jumpforce,ForceMode2D.Impulse);
