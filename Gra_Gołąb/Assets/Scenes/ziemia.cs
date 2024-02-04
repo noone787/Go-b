@@ -8,15 +8,16 @@ using UnityEngine;
 public class ziemia : MonoBehaviour
 {
     public bool IsOnGround = false;
+    public PlayerJump pj;
     public int AirJump = 1;
     void OnCollisionEnter2D(){
-        AirJump = 1;
-        IsOnGround = true;
+        pj.AirJump = 1;
+        pj.IsOnGround = true;
         
     }
     void OnCollisionExit2D(){
         
-        IsOnGround = false;
+        pj.IsOnGround = false;
         
     }
     
