@@ -2,27 +2,33 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
+using System.Threading.Tasks;
+using UnityEditor.U2D.Aseprite;
+using UnityEditor.UIElements;
 using UnityEngine;
 
 public class Kolce : MonoBehaviour
 {
     public Health health;
+    
+    public int ilosc_czasu_miedzy_obrazeniami;
+    
     public int dmg;
-    BoxCollider2D boxCollider2D;
-    public BoxCollider2D collider1;
+    
     void Start()
     {
         dmg = 10;
+        ilosc_czasu_miedzy_obrazeniami = 1000;
+        
     }
     
-    void OnCollisionEnter2D(){
-        Debug.Log("SDG");
+    
+    void OnTriggerEnter2D() {
+        
         health.health = health.health - dmg;
         
     }
     
-    void Update()
-    {
-        
-    }
+    
+    
 }
