@@ -11,12 +11,13 @@ public class Kolce : MonoBehaviour
 {
     public Health health;
     bool running = false;
+    bool napewno = false;
     public int ilosc_czasu_miedzy_obrazeniami;
     
     public int dmg;
     
     void OnTriggerEnter2D() {
-        // Uruchomienie coroutine, która będzie wywoływać funkcję co 1 sekundę
+        napewno = true;
         running = true;
         StartCoroutine(CallFunctionRepeatedly());
         health.health = health.health - dmg;
@@ -24,6 +25,7 @@ public class Kolce : MonoBehaviour
     }
     void OnTriggerExit2D() {
         running = false;
+        napewno = false;
     }
     
     void Start()
@@ -45,7 +47,9 @@ public class Kolce : MonoBehaviour
     void ExecuteFunction()
     {
         // Funkcja będzie wywoływana co 1 sekundę
+        if (napewno == true) {
         health.health = health.health - dmg;
+        }
     }
 
     
