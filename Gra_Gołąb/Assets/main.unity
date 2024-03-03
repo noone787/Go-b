@@ -5971,6 +5971,11 @@ MonoBehaviour:
   you_died: {fileID: 1051012367}
   "czarne_t\u0142o": {fileID: 1167411039}
   image: {fileID: 1028895624}
+  Play_Button_Image: {fileID: 0}
+  Options_Button_Image: {fileID: 0}
+  Play_Button: {fileID: 0}
+  Options_Button: {fileID: 0}
+  Main_Menu_SpriteRenderer: {fileID: 0}
   x: {x: 0, y: 0, z: 0}
 --- !u!114 &1028895624
 MonoBehaviour:
