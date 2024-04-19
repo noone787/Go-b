@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Ziemia_Przenikalna : MonoBehaviour
 {
+
+public double xx = 1.3;
+public double yy = 0.7;
     
     Transform transform1;
     public Transform transform999;
@@ -13,8 +16,8 @@ public class Ziemia_Przenikalna : MonoBehaviour
     {   
         transform1 = GetComponent<Transform>();
         // Jeśli zmieniasz grubość przenikalnej platformy to tutaj x i y zmieniaj jeśli chcesz płynne przejście z góry na dół i na odwrót
-        x1 = 1.3;
-        y1 = 0.7;
+        x1 = xx;
+        y1 = yy;
     }
     
    
