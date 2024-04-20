@@ -12,7 +12,7 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
 
-    public string menuScene = "Level_Menu";
+    public string menuScene = "LevelMenu";
     
 
     void Update()

@@ -9222,8 +9222,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.9063721, y: -8.986786}
-  m_SizeDelta: {x: -989.9982, y: -414.3585}
+  m_AnchoredPosition: {x: -0.9063721, y: -2.7153015}
+  m_SizeDelta: {x: -989.9982, y: -412.3484}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1403923316
 MonoBehaviour:
@@ -9965,7 +9965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 1403923314}
-  menuScene: Level_Menu
+  menuScene: LevelMenu
 --- !u!212 &1477650302
 SpriteRenderer:
   m_ObjectHideFlags: 0
