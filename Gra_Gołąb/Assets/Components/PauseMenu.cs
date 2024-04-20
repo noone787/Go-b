@@ -4,12 +4,16 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
+
+    public string menuScene = "Level_Menu";
+    
 
     void Update()
     {
@@ -33,6 +37,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+        Debug.Log("resume");
     }
 
     void Pause()
@@ -40,14 +45,17 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+        Debug.Log("pause");
     }
 
     public void LoadMenu()
     {
-        Debug.Log("menu");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(menuScene);
     }
     public void QuitGame()
     {
         Debug.Log("quit");
+        Application.Quit();
     }
 }

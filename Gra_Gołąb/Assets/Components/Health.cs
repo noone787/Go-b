@@ -37,6 +37,7 @@ public class Health : MonoBehaviour
         if (health == 0) {
             czarne_tło.enabled = true;
             you_died.enabled = true;
+            Time.timeScale = 0f;
             textMeshPro.enabled = false;
             if (Input.GetKeyDown(KeyCode.Space)) {
                 health = zycie_poczatkowe;
