@@ -39,12 +39,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: pause
-    uniqueID: 809075785
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: ui
     uniqueID: 3584679545
     locked: 0
-  - name: Default
-    uniqueID: 0
+  - name: pause
+    uniqueID: 809075785
     locked: 0
