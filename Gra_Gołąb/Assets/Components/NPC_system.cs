@@ -10,41 +10,42 @@ public class NPC_system : MonoBehaviour
     [SerializeField] GameObject dialogBox;
     [SerializeField] TMP_Text dialogText;
     bool player_detection = false;
+    bool change_dialog = false;
     void Start()
     {
-        StartCoroutine(dialog());
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if  (PlayerMovement.PlayerDialogue && Input.GetKeyDown(KeyCode.Mouse0) && change_dialog)
+                {
+                    PlayerMovement.PlayerDialogue = false;
+                    dialogBox.SetActive(false);
+                }
+        if (player_detection && !PlayerMovement.PlayerDialogue && Input.GetKeyDown(KeyCode.F))
+        {
+            change_dialog = false;
+            StartCoroutine(dialog());
+        }
     }
 
 
     IEnumerator dialog()
     {
-        if (player_detection && Input.GetKeyDown(KeyCode.F) && !PlayerMovement.PlayerDialogue)
         {
-            Debug.Log("dialog");
-            PlayerMovement.PlayerDialogue = true;
-            dialogBox.SetActive(true);
-            dialogText.text = "kupka w dupce chlupce";
-            yield return new WaitForSeconds(2);
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            if (player_detection) // && Input.GetKeyDown(KeyCode.F) && !PlayerMovement.PlayerDialogue)
             {
-                PlayerMovement.PlayerDialogue = false;
-                dialogBox.SetActive(false);
+                Debug.Log("dialog");
+                PlayerMovement.PlayerDialogue = true;
+                dialogBox.SetActive(true);
+                dialogText.text = "kupka w dupce chlupce";
+                yield return new WaitForSeconds(2);
+                change_dialog = true;
             }
         }
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Debug.Log("pressed esc");
-        }
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            Debug.Log("pressed f");
-        }
+        
     }
 
 

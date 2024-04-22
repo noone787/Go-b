@@ -40,14 +40,6 @@ public class PlayerJump : MonoBehaviour
                 
             }
         }
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Debug.Log("pressed esc");
-        }
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            Debug.Log("pressed f");
-        }
     }
 
     
