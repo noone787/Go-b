@@ -9,6 +9,7 @@ public class NPC_system : MonoBehaviour
 {
     [SerializeField] GameObject dialogBox;
     [SerializeField] TMP_Text dialogText;
+    [SerializeField] GameObject dialogNext;
     bool player_detection = false;
     bool change_dialog = false;
     void Start()
@@ -40,9 +41,11 @@ public class NPC_system : MonoBehaviour
                 Debug.Log("dialog");
                 PlayerMovement.PlayerDialogue = true;
                 dialogBox.SetActive(true);
+                dialogNext.SetActive(false);
                 dialogText.text = "kupka w dupce chlupce";
                 yield return new WaitForSeconds(2);
                 change_dialog = true;
+                dialogNext.SetActive(true);
             }
         }
         
