@@ -3,8 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using UnityEditor.U2D.Aseprite;
-using UnityEditor.UIElements;
+using UnityEditor;
 using UnityEngine;
 
 public class Kolce : MonoBehaviour
