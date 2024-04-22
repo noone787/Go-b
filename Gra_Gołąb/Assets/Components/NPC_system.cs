@@ -37,6 +37,14 @@ public class NPC_system : MonoBehaviour
                 dialogBox.SetActive(false);
             }
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("pressed esc");
+        }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            Debug.Log("pressed f");
+        }
     }
 
 

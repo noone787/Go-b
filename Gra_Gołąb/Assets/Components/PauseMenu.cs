@@ -17,8 +17,10 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("pause update");
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            Debug.Log("pauza");
             if (GameIsPaused)
             {
                 Resume();
@@ -28,6 +30,14 @@ public class PauseMenu : MonoBehaviour
             {
                 Pause();
             }
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("pressed esc");
+        }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            Debug.Log("pressed f");
         }
 
     }
