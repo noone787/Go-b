@@ -20,10 +20,10 @@ public class NPC_system : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if  (PlayerMovement.PlayerDialogue && Input.GetKeyDown(KeyCode.Mouse0) && change_dialog)
+        if  (PlayerMovement.PlayerDialogue && Input.GetKeyDown(KeyCode.Mouse0) && !change_dialog)
                 {
-                    PlayerMovement.PlayerDialogue = false;
-                    dialogBox.SetActive(false);
+                    change_dialog = true;
+                    dialogNext.SetActive(false);
                 }
         if (player_detection && !PlayerMovement.PlayerDialogue && Input.GetKeyDown(KeyCode.F))
         {
@@ -38,14 +38,29 @@ public class NPC_system : MonoBehaviour
         {
             if (player_detection) // && Input.GetKeyDown(KeyCode.F) && !PlayerMovement.PlayerDialogue)
             {
-                Debug.Log("dialog");
+                //setup dialogu
                 PlayerMovement.PlayerDialogue = true;
                 dialogBox.SetActive(true);
                 dialogNext.SetActive(false);
+                //pierwsze zdanie
                 dialogText.text = "kupka w dupce chlupce";
                 yield return new WaitForSeconds(2);
-                change_dialog = true;
                 dialogNext.SetActive(true);
+                yield return new WaitUntil(() => change_dialog == true); 
+                //2 zdanie
+                dialogText.text = "w dupce kupka chlupce";
+                yield return new WaitForSeconds(2);
+                change_dialog = false;
+                dialogNext.SetActive(true);
+                yield return new WaitUntil(() => change_dialog == true); 
+                //3 zdanie
+                dialogText.text = "chlupce kupka w dupce";
+                yield return new WaitForSeconds(2);
+                change_dialog = false;
+                dialogNext.SetActive(true);
+                yield return new WaitUntil(() => change_dialog == true);
+                //zakonczenie dialogu
+                EndDialogue();
             }
         }
         
@@ -64,6 +79,12 @@ public class NPC_system : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         player_detection = false;
+    }
+
+    void EndDialogue()
+    {
+        PlayerMovement.PlayerDialogue = false;
+        dialogBox.SetActive(false);
     }
 
 }

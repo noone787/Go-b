@@ -5124,6 +5124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b72529e2f5079da4e97b225916ac3717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue: {fileID: 0}
   dialogBox: {fileID: 640995398}
   dialogText: {fileID: 1908891925}
   dialogNext: {fileID: 2015509503}
