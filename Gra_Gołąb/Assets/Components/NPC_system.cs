@@ -10,6 +10,8 @@ public class NPC_system : MonoBehaviour
     [SerializeField] GameObject dialogBox;
     [SerializeField] TMP_Text dialogText;
     [SerializeField] GameObject dialogNext;
+
+    public string[] zdania;
     bool player_detection = false;
     bool change_dialog = false;
     void Start()
@@ -38,28 +40,17 @@ public class NPC_system : MonoBehaviour
         {
             if (player_detection) // && Input.GetKeyDown(KeyCode.F) && !PlayerMovement.PlayerDialogue)
             {
-                //setup dialogu
                 PlayerMovement.PlayerDialogue = true;
                 dialogBox.SetActive(true);
                 dialogNext.SetActive(false);
-                //pierwsze zdanie
-                dialogText.text = "kupka w dupce chlupce";
-                yield return new WaitForSeconds(2);
-                dialogNext.SetActive(true);
-                yield return new WaitUntil(() => change_dialog == true); 
-                //2 zdanie
-                dialogText.text = "a man ate a pigeon";
-                yield return new WaitForSeconds(2);
-                change_dialog = false;
-                dialogNext.SetActive(true);
-                yield return new WaitUntil(() => change_dialog == true); 
-                //3 zdanie
-                dialogText.text = "chlupce kupka w dupce";
-                yield return new WaitForSeconds(2);
-                change_dialog = false;
-                dialogNext.SetActive(true);
-                yield return new WaitUntil(() => change_dialog == true);
-                //zakonczenie dialogu
+                for (int i = 0; i < zdania.Length; i++)
+                {
+                    dialogText.text = zdania[i];
+                    change_dialog = false;
+                    yield return new WaitForSeconds(2);
+                    dialogNext.SetActive(true);
+                    yield return new WaitUntil(() => change_dialog == true); 
+                }
                 EndDialogue();
             }
         }

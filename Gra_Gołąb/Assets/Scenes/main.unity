@@ -5142,7 +5142,7 @@ Transform:
   m_GameObject: {fileID: 1021244254}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -213.55, y: -13.71, z: 0}
+  m_LocalPosition: {x: -163.8, y: -5.2, z: 0}
   m_LocalScale: {x: 2.017585, y: 2.00716, z: 1.39}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -6462,6 +6462,10 @@ MonoBehaviour:
   dialogBox: {fileID: 640995398}
   dialogText: {fileID: 1908891925}
   dialogNext: {fileID: 2015509503}
+  zdania:
+  - w dupce kupka chlupce
+  - a man ate a pigeoj
+  - kupka chlupce w dupce
 --- !u!61 &1270154672
 BoxCollider2D:
   m_ObjectHideFlags: 0
