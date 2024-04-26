@@ -14,6 +14,7 @@ public class PlayerJump : MonoBehaviour
 
     // Rzeczy Do Skoku
     public float jumpforce = 20f;
+    public float secondjumpforce = 10f;
     Rigidbody2D rb;
     public bool IsOnGround = false;
     public int AirJump = 1; 

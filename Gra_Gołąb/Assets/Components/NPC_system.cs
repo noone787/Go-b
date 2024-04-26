@@ -48,7 +48,7 @@ public class NPC_system : MonoBehaviour
                 dialogNext.SetActive(true);
                 yield return new WaitUntil(() => change_dialog == true); 
                 //2 zdanie
-                dialogText.text = "w dupce kupka chlupce";
+                dialogText.text = "a man ate a pigeon";
                 yield return new WaitForSeconds(2);
                 change_dialog = false;
                 dialogNext.SetActive(true);
