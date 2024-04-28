@@ -6,7 +6,7 @@ using UnityEngine;
 public class LadderMovement : MonoBehaviour
 {
     public float vertical;
-    private float climbSpeed = 8f;
+    [SerializeField] float climbSpeed = 6f;
     public bool nextToLadder;
     public bool isClimbing;
 
