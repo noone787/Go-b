@@ -21,15 +21,8 @@ public class LadderMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //vertical = Input.GetAxisRaw("Vertical");
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            vertical = 1;
-        }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            vertical = -1;
-        }
+        vertical = Input.GetAxis("Vertical");
+        
         if (nextToLadder && vertical > 0)
         {
             isClimbing = true;
