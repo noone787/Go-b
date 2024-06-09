@@ -9,6 +9,7 @@ using UnityEngine;
 public class Kolce : MonoBehaviour
 {
     public Health health;
+    public Health health_inventory;
     bool running = false;
     bool napewno = false;
     public int ilosc_czasu_miedzy_obrazeniami;
@@ -20,6 +21,7 @@ public class Kolce : MonoBehaviour
         running = true;
         StartCoroutine(CallFunctionRepeatedly());
         health.health = health.health - dmg;
+        health_inventory.health = health_inventory.health - dmg;
         
     }
     void OnTriggerExit2D() {
@@ -48,6 +50,7 @@ public class Kolce : MonoBehaviour
         // Funkcja będzie wywoływana co 1 sekundę
         if (napewno == true) {
         health.health = health.health - dmg;
+        health_inventory.health = health_inventory.health - dmg;
         }
     }
 
