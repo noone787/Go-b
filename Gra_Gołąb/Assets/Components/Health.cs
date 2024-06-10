@@ -24,6 +24,7 @@ public class Health : MonoBehaviour
     public Button Options_Button;
     public SpriteRenderer Main_Menu_SpriteRenderer;
     public Vector3 x;
+    
     void Start(){
         health = 100;
         zycie_poczatkowe = health;
@@ -35,15 +36,15 @@ public class Health : MonoBehaviour
         image.fillAmount = health/100;
         if (health == 0) {
             death_image.SetActive(true);
-            Time.timeScale = 0f;
             textMeshPro.enabled = false;
-            if (Input.GetKeyDown(KeyCode.Space)) {
-                health = zycie_poczatkowe;
+            gracz.position = x;
+            if (health == zycie_poczatkowe) {
                 death_image.SetActive(false);
                 textMeshPro.enabled = true;
                 gracz.position = x;
             }
         }
+        
 
     }
 }

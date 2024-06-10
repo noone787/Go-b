@@ -15,13 +15,19 @@ public class Kolce : MonoBehaviour
     public int ilosc_czasu_miedzy_obrazeniami;
     
     public int dmg;
+
+    // Sound Effects
+    public AudioSource audioSource;
+    public AudioClip sfx2;
     
     void OnTriggerEnter2D() {
         napewno = true;
         running = true;
-        StartCoroutine(CallFunctionRepeatedly());
         health.health = health.health - dmg;
         health_inventory.health = health_inventory.health - dmg;
+        StartCoroutine(CallFunctionRepeatedly());
+        audioSource.Play();
+        
         
     }
     void OnTriggerExit2D() {
@@ -33,6 +39,7 @@ public class Kolce : MonoBehaviour
     {
         dmg = 10;
         ilosc_czasu_miedzy_obrazeniami = 1000;
+        audioSource.clip = sfx2;
         
     }
 
@@ -51,6 +58,7 @@ public class Kolce : MonoBehaviour
         if (napewno == true) {
         health.health = health.health - dmg;
         health_inventory.health = health_inventory.health - dmg;
+        audioSource.Play();
         }
     }
 

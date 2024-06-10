@@ -18,9 +18,14 @@ public class PlayerJump : MonoBehaviour
     Rigidbody2D rb;
     public bool IsOnGround = false;
     public int AirJump = 1; 
+
+    // Sound effect
+    public AudioSource audioSource;
+    public AudioClip sfx1;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        audioSource.clip = sfx1;
         
     }
     
@@ -32,9 +37,11 @@ public class PlayerJump : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space)) {
             if (IsOnGround == true){
                 rb.AddForce(Vector2.up * jumpforce,ForceMode2D.Impulse);
+                audioSource.Play();
             }
             else if (AirJump > 0){
                 rb.AddForce(Vector2.up * jumpforce,ForceMode2D.Impulse);
+                audioSource.Play();
                 AirJump = AirJump - 1;
             }
             else{

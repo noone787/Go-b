@@ -5,9 +5,11 @@ using UnityEngine;
 public class DoomDetector : MonoBehaviour
 {
     public Health health;
+    public Health inventory_health;
 
     void OnTriggerEnter2D(){
         health.health = 0;
+        inventory_health.health = 0;
     }
 
 
