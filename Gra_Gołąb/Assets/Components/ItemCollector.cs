@@ -7,12 +7,11 @@ using UnityEngine.UI;
 public class ItemCollector : MonoBehaviour
 {
     public TMP_Text obwarzankiText;
-    private int obwarzanki = 0;
-
+    public int obwarzanki = 0;
 
     void Start()
     {
-        obwarzankiText.text = "obwarzanki: " + obwarzanki.ToString();
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -22,7 +21,9 @@ public class ItemCollector : MonoBehaviour
                 Destroy(collision.gameObject);
                 obwarzanki++;
                 Debug.Log("obwarzanki:" + obwarzanki);
-                obwarzankiText.text = "obwarzanki: " + obwarzanki.ToString();
             }
         }
+    void Update() {
+        obwarzankiText.text = "obwarzanki: " + obwarzanki.ToString();
+    }
 }
