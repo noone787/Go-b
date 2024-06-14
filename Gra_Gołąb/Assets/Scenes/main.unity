@@ -2486,6 +2486,9 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 1
   miejsce: 
+  dodatkowe_zycie: 0
+  obrona: 0
+  atak: 10
 --- !u!1 &242653409
 GameObject:
   m_ObjectHideFlags: 0
@@ -3214,6 +3217,9 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 14
   miejsce: 
+  dodatkowe_zycie: 0
+  obrona: 0
+  atak: 10
 --- !u!1 &315413073
 GameObject:
   m_ObjectHideFlags: 0
@@ -3389,6 +3395,9 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 13
   miejsce: 
+  dodatkowe_zycie: 0
+  obrona: 0
+  atak: 10
 --- !u!224 &327835549 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7175612923435950813, guid: f071bf070acd84b4db1ce2ad33d73bfa, type: 3}
@@ -4850,6 +4859,9 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 10
   miejsce: 
+  dodatkowe_zycie: 0
+  obrona: 0
+  atak: 10
 --- !u!1 &529241214
 GameObject:
   m_ObjectHideFlags: 0
@@ -6824,6 +6836,9 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 6
   miejsce: 
+  dodatkowe_zycie: 0
+  obrona: 0
+  atak: 10
 --- !u!1 &767357219
 GameObject:
   m_ObjectHideFlags: 0
@@ -8115,6 +8130,9 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 12
   miejsce: 
+  dodatkowe_zycie: 0
+  obrona: 0
+  atak: 10
 --- !u!4 &902107869 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8559749084512762968, guid: ee98e2c403b118e4899a3eeaf5bddb9a, type: 3}
@@ -8373,6 +8391,9 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 4
   miejsce: 
+  dodatkowe_zycie: 0
+  obrona: 0
+  atak: 10
 --- !u!1 &954905169
 GameObject:
   m_ObjectHideFlags: 0
@@ -10346,6 +10367,9 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 5
   miejsce: 
+  dodatkowe_zycie: 0
+  obrona: 0
+  atak: 10
 --- !u!1 &1094878844
 GameObject:
   m_ObjectHideFlags: 0
@@ -10683,6 +10707,9 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 11
   miejsce: 
+  dodatkowe_zycie: 0
+  obrona: 0
+  atak: 10
 --- !u!1 &1113073741
 GameObject:
   m_ObjectHideFlags: 0
@@ -10936,6 +10963,9 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 2
   miejsce: 
+  dodatkowe_zycie: 0
+  obrona: 0
+  atak: 10
 --- !u!1 &1137559406
 GameObject:
   m_ObjectHideFlags: 0
@@ -11481,6 +11511,9 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 3
   miejsce: 
+  dodatkowe_zycie: 0
+  obrona: 0
+  atak: 10
 --- !u!1 &1157879790
 GameObject:
   m_ObjectHideFlags: 0
@@ -12841,6 +12874,9 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 7
   miejsce: 
+  dodatkowe_zycie: 0
+  obrona: 0
+  atak: 10
 --- !u!1 &1333660637
 GameObject:
   m_ObjectHideFlags: 0
@@ -15773,6 +15809,9 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 15
   miejsce: 
+  dodatkowe_zycie: 0
+  obrona: 0
+  atak: 10
 --- !u!1 &1639932794
 GameObject:
   m_ObjectHideFlags: 0
@@ -16209,7 +16248,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1888429590}
   m_Father: {fileID: 1896824423}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -16270,6 +16310,9 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 0
   miejsce: 
+  dodatkowe_zycie: 0
+  obrona: 0
+  atak: 10
 --- !u!1 &1708680153
 GameObject:
   m_ObjectHideFlags: 0
@@ -16590,6 +16633,9 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 9
   miejsce: 
+  dodatkowe_zycie: 0
+  obrona: 0
+  atak: 10
 --- !u!1 &1748084809
 GameObject:
   m_ObjectHideFlags: 0
@@ -18062,6 +18108,154 @@ Transform:
   - {fileID: 366063644}
   m_Father: {fileID: 1608389564}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1888429589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1888429590}
+  - component: {fileID: 1888429593}
+  - component: {fileID: 1888429592}
+  - component: {fileID: 1888429591}
+  - component: {fileID: 1888429594}
+  m_Layer: 0
+  m_Name: Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1888429590
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888429589}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1705932675}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.4, y: 0}
+  m_SizeDelta: {x: 90, y: 90}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1888429591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888429589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.4528302, g: 0.43787825, b: 0.43787825, a: 1}
+    m_PressedColor: {r: 0.3207547, g: 0.2980598, b: 0.2980598, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1888429592}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1888429594}
+        m_TargetAssemblyTypeName: Buttom_Inventory, Assembly-CSharp
+        m_MethodName: ButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1888429592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888429589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 0
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1888429593
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888429589}
+  m_CullTransparentMesh: 1
+--- !u!114 &1888429594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888429589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec9143768bfa8849a863297319a4e66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1888429591}
+  slot: 0
+  slot_Manager: {fileID: 0}
 --- !u!1 &1896824422
 GameObject:
   m_ObjectHideFlags: 0
@@ -19560,6 +19754,9 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 8
   miejsce: 
+  dodatkowe_zycie: 0
+  obrona: 0
+  atak: 10
 --- !u!1 &2002027533
 GameObject:
   m_ObjectHideFlags: 0

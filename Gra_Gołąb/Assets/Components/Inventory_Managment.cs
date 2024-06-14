@@ -25,7 +25,8 @@ public class Inventory_Managment : MonoBehaviour
     public string slot14;
     public string slot15;
     public string slot16;
-  
+    
+    
 
     
     void Update()

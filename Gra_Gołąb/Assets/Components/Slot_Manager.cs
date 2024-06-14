@@ -8,8 +8,14 @@ public class Slot_Manager : MonoBehaviour
     public int slot;
     public string miejsce;
 
-    void Update () {
+    public int dodatkowe_zycie;
+    public int obrona;
+    public int atak = 10;
+    void Start() {
         miejsce = inventory_Managment.Inventory[slot];
+    }
+    void Update () {
+        inventory_Managment.Inventory[slot] = miejsce;
     }
     
 }
