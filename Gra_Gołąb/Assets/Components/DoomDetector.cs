@@ -4,25 +4,14 @@ using UnityEngine;
 
 public class DoomDetector : MonoBehaviour
 {
-    public Health health;
-    public Health inventory_health;
+    public Inventory_Managment inventory_Managment;
+    
 
     void OnTriggerEnter2D(){
-        health.health = 0;
-        inventory_health.health = 0;
+        inventory_Managment.zycie = 0;
     }
 
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
