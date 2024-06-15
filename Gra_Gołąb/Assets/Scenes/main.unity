@@ -1926,6 +1926,7 @@ GameObject:
   - component: {fileID: 162470601}
   - component: {fileID: 162470604}
   - component: {fileID: 162470603}
+  - component: {fileID: 162470605}
   m_Layer: 0
   m_Name: miecz_slot
   m_TagString: Untagged
@@ -1990,6 +1991,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 162470600}
   m_CullTransparentMesh: 1
+--- !u!114 &162470605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162470600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aada3d480aab9f4991e4de7a1f0c03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  przedmiot2: 
+  inventory_Managment: {fileID: 1896824424}
 --- !u!1 &171873955
 GameObject:
   m_ObjectHideFlags: 0
@@ -2486,9 +2501,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 1
   miejsce: 
-  dodatkowe_zycie: 0
-  obrona: 0
-  atak: 10
 --- !u!1 &242653409
 GameObject:
   m_ObjectHideFlags: 0
@@ -3217,9 +3229,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 14
   miejsce: 
-  dodatkowe_zycie: 0
-  obrona: 0
-  atak: 10
 --- !u!1 &315413073
 GameObject:
   m_ObjectHideFlags: 0
@@ -3395,9 +3404,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 13
   miejsce: 
-  dodatkowe_zycie: 0
-  obrona: 0
-  atak: 10
 --- !u!224 &327835549 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7175612923435950813, guid: f071bf070acd84b4db1ce2ad33d73bfa, type: 3}
@@ -4077,6 +4083,154 @@ MonoBehaviour:
   punkty_do_levelowania: 0
   image: {fileID: 388940066}
   textMeshPro: {fileID: 1790507078}
+--- !u!1 &410234945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 410234946}
+  - component: {fileID: 410234949}
+  - component: {fileID: 410234948}
+  - component: {fileID: 410234947}
+  - component: {fileID: 410234950}
+  m_Layer: 0
+  m_Name: Uzbrojenie_Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &410234946
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410234945}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1577562128}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -126, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &410234947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410234945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.45098042, g: 0.43921572, b: 0.43921572, a: 1}
+    m_PressedColor: {r: 0.32156864, g: 0.29803923, b: 0.29803923, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 410234948}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 410234950}
+        m_TargetAssemblyTypeName: Button_Uzbrojenie, Assembly-CSharp
+        m_MethodName: ButtonClick_Uzbrojenie
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ButtonClick_Uzbrojenie
+          m_BoolArgument: 0
+        m_CallState: 1
+--- !u!114 &410234948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410234945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &410234949
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410234945}
+  m_CullTransparentMesh: 1
+--- !u!114 &410234950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410234945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9c8c8a7676dc247b155896717a8b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory_Managment: {fileID: 1896824424}
+  button: {fileID: 410234947}
+  x: 
 --- !u!1 &449127618
 GameObject:
   m_ObjectHideFlags: 0
@@ -4859,9 +5013,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 10
   miejsce: 
-  dodatkowe_zycie: 0
-  obrona: 0
-  atak: 10
 --- !u!1 &529241214
 GameObject:
   m_ObjectHideFlags: 0
@@ -6836,9 +6987,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 6
   miejsce: 
-  dodatkowe_zycie: 0
-  obrona: 0
-  atak: 10
 --- !u!1 &767357219
 GameObject:
   m_ObjectHideFlags: 0
@@ -8130,9 +8278,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 12
   miejsce: 
-  dodatkowe_zycie: 0
-  obrona: 0
-  atak: 10
 --- !u!4 &902107869 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8559749084512762968, guid: ee98e2c403b118e4899a3eeaf5bddb9a, type: 3}
@@ -8391,9 +8536,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 4
   miejsce: 
-  dodatkowe_zycie: 0
-  obrona: 0
-  atak: 10
 --- !u!1 &954905169
 GameObject:
   m_ObjectHideFlags: 0
@@ -9721,6 +9863,7 @@ GameObject:
   - component: {fileID: 1046979834}
   - component: {fileID: 1046979837}
   - component: {fileID: 1046979836}
+  - component: {fileID: 1046979838}
   m_Layer: 0
   m_Name: "pier\u015Bcien_slot1"
   m_TagString: Untagged
@@ -9785,6 +9928,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1046979833}
   m_CullTransparentMesh: 1
+--- !u!114 &1046979838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046979833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9781ef8475f747741ac2241c34675417, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  przedmiot2: 
+  inventory_Managment: {fileID: 1896824424}
 --- !u!1 &1053790025
 GameObject:
   m_ObjectHideFlags: 0
@@ -10367,9 +10524,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 5
   miejsce: 
-  dodatkowe_zycie: 0
-  obrona: 0
-  atak: 10
 --- !u!1 &1094878844
 GameObject:
   m_ObjectHideFlags: 0
@@ -10707,9 +10861,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 11
   miejsce: 
-  dodatkowe_zycie: 0
-  obrona: 0
-  atak: 10
 --- !u!1 &1113073741
 GameObject:
   m_ObjectHideFlags: 0
@@ -10963,9 +11114,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 2
   miejsce: 
-  dodatkowe_zycie: 0
-  obrona: 0
-  atak: 10
 --- !u!1 &1137559406
 GameObject:
   m_ObjectHideFlags: 0
@@ -11511,9 +11659,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 3
   miejsce: 
-  dodatkowe_zycie: 0
-  obrona: 0
-  atak: 10
 --- !u!1 &1157879790
 GameObject:
   m_ObjectHideFlags: 0
@@ -11789,6 +11934,7 @@ GameObject:
   - component: {fileID: 1191336278}
   - component: {fileID: 1191336281}
   - component: {fileID: 1191336280}
+  - component: {fileID: 1191336282}
   m_Layer: 0
   m_Name: "pier\u015Bcien_slot2"
   m_TagString: Untagged
@@ -11853,6 +11999,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1191336277}
   m_CullTransparentMesh: 1
+--- !u!114 &1191336282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191336277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9781ef8475f747741ac2241c34675417, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  przedmiot2: 
+  inventory_Managment: {fileID: 1896824424}
 --- !u!1 &1205799901
 GameObject:
   m_ObjectHideFlags: 0
@@ -12874,9 +13034,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 7
   miejsce: 
-  dodatkowe_zycie: 0
-  obrona: 0
-  atak: 10
 --- !u!1 &1333660637
 GameObject:
   m_ObjectHideFlags: 0
@@ -15496,6 +15653,7 @@ GameObject:
   - component: {fileID: 1577562128}
   - component: {fileID: 1577562131}
   - component: {fileID: 1577562130}
+  - component: {fileID: 1577562132}
   m_Layer: 0
   m_Name: armor_slot
   m_TagString: Untagged
@@ -15514,7 +15672,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 410234946}
   m_Father: {fileID: 1896824423}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -15560,6 +15719,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1577562127}
   m_CullTransparentMesh: 1
+--- !u!114 &1577562132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577562127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 400e66995074e8a469733c5039e2da46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  przedmiot2: 
+  inventory_Managment: {fileID: 1896824424}
 --- !u!1 &1588943132
 GameObject:
   m_ObjectHideFlags: 0
@@ -15809,9 +15982,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 15
   miejsce: 
-  dodatkowe_zycie: 0
-  obrona: 0
-  atak: 10
 --- !u!1 &1639932794
 GameObject:
   m_ObjectHideFlags: 0
@@ -16310,9 +16480,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 0
   miejsce: 
-  dodatkowe_zycie: 0
-  obrona: 0
-  atak: 10
 --- !u!1 &1708680153
 GameObject:
   m_ObjectHideFlags: 0
@@ -16633,9 +16800,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 9
   miejsce: 
-  dodatkowe_zycie: 0
-  obrona: 0
-  atak: 10
 --- !u!1 &1748084809
 GameObject:
   m_ObjectHideFlags: 0
@@ -18255,7 +18419,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 1888429591}
   slot: 0
-  slot_Manager: {fileID: 0}
+  przedmiot1: 
+  slot_Manager: {fileID: 1705932678}
+  uzbrojenie_gracza: {fileID: 1896824425}
 --- !u!1 &1896824422
 GameObject:
   m_ObjectHideFlags: 0
@@ -18266,6 +18432,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1896824423}
   - component: {fileID: 1896824424}
+  - component: {fileID: 1896824425}
   m_Layer: 0
   m_Name: Itemy
   m_TagString: Untagged
@@ -18357,6 +18524,25 @@ MonoBehaviour:
   slot14: 
   slot15: 
   slot16: 
+  dodatkowe_zycie: 0
+  obrona: 0
+  atak: 10
+--- !u!114 &1896824425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896824422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ac5ffe05eeffa48a2de212966603c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  przedmiot: 
+  miecz_Manager: {fileID: 0}
+  armor_Manager: {fileID: 1577562132}
+  "pier\u015Bcien_Manager": {fileID: 0}
 --- !u!1 &1898157208
 GameObject:
   m_ObjectHideFlags: 0
@@ -19754,9 +19940,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 8
   miejsce: 
-  dodatkowe_zycie: 0
-  obrona: 0
-  atak: 10
 --- !u!1 &2002027533
 GameObject:
   m_ObjectHideFlags: 0

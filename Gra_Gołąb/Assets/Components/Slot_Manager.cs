@@ -8,9 +8,7 @@ public class Slot_Manager : MonoBehaviour
     public int slot;
     public string miejsce;
 
-    public int dodatkowe_zycie;
-    public int obrona;
-    public int atak = 10;
+    
     void Start() {
         miejsce = inventory_Managment.Inventory[slot];
     }

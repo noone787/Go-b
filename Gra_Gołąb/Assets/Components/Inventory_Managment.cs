@@ -27,9 +27,11 @@ public class Inventory_Managment : MonoBehaviour
     public string slot16;
     
     
-
+    public int dodatkowe_zycie;
+    public int obrona = 0;
+    public int atak = 10;
     
-    void Update()
+    void Start()
     {
         slot1 = Inventory[0];
         slot2 = Inventory[1];
