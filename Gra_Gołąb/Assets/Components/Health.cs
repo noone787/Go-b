@@ -12,7 +12,7 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
-    public float health;
+    public Inventory_Managment inventory_Managment;
     float zycie_poczatkowe;
     public Transform gracz;
     public TextMeshProUGUI textMeshPro;
@@ -24,16 +24,18 @@ public class Health : MonoBehaviour
     public Button Options_Button;
     public SpriteRenderer Main_Menu_SpriteRenderer;
     public Vector3 x;
+    public float health;
     
     void Start(){
-        health = 100;
+        health = inventory_Managment.zycie;
         zycie_poczatkowe = health;
         Vector3 x = gracz.position;
     }
     
     
     void Update(){
-        image.fillAmount = health/100;
+        health = inventory_Managment.zycie;
+        image.fillAmount = health/inventory_Managment.max_zycie;
         if (health == 0) {
             death_image.SetActive(true);
             textMeshPro.enabled = false;

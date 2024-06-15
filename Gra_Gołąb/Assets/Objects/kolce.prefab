@@ -142,9 +142,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc78ab404b291694caa27d86419d54d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: {fileID: 0}
+  inventory_Managment: {fileID: 0}
   ilosc_czasu_miedzy_obrazeniami: 0
   dmg: 0
+  audioSource: {fileID: 0}
+  sfx2: {fileID: 0}
 --- !u!61 &3861741328846925190
 BoxCollider2D:
   m_ObjectHideFlags: 0

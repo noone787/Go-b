@@ -13,7 +13,7 @@ public class Slot_Manager : MonoBehaviour
         miejsce = inventory_Managment.Inventory[slot];
     }
     void Update () {
-        inventory_Managment.Inventory[slot] = miejsce;
+        miejsce = inventory_Managment.Inventory[slot];
     }
     
 }
