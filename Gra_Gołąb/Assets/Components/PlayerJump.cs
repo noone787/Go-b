@@ -13,7 +13,7 @@ public class PlayerJump : MonoBehaviour
 {
 
     // Rzeczy Do Skoku
-    public float jumpforce = 20f;
+    public float jumpforce = 8f;
     public float secondjumpforce = 10f;
     Rigidbody2D rb;
     public bool IsOnGround = false;
@@ -40,9 +40,9 @@ public class PlayerJump : MonoBehaviour
                 audioSource.Play();
             }
             else if (AirJump > 0){
-                rb.AddForce(Vector2.up * jumpforce,ForceMode2D.Impulse);
+                rb.velocity = Vector2.up * jumpforce;
                 audioSource.Play();
-                AirJump = AirJump - 1;
+                AirJump--;
             }
             else{
                 
