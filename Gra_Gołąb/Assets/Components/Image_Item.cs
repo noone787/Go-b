@@ -7,13 +7,13 @@ using UnityEngine;
 public class Image_Item : MonoBehaviour
 {
     public Inventory_Managment inventory_Managment;
-    public Sprite armor1;
+    public Sprite image;
     
     public int slot;
     void Start() {
         slot = GetComponentInParent<Slot_Manager>().slot;
     }
     void Update() {
-        this.gameObject.GetComponent<SpriteRenderer>().sprite = armor1;
+        this.gameObject.GetComponent<SpriteRenderer>().sprite = image;
     }
 }
