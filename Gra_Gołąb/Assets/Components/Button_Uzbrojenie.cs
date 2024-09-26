@@ -7,6 +7,7 @@ public class Button_Uzbrojenie : MonoBehaviour
 {   
     public Inventory_Managment inventory_Managment;
     public Button button;
+    public int slot;
     
 
     void Start() {
@@ -14,8 +15,8 @@ public class Button_Uzbrojenie : MonoBehaviour
     }
     public void ButtonClick_Uzbrojenie() {
         
-        inventory_Managment.dodanie = GetComponentInParent<Uzbrojenie_Manager>().przedmiot2; 
-        inventory_Managment.Inventory[GetComponentInParent<Uzbrojenie_Manager>().slot] = "null";
+        inventory_Managment.dodanie = GetComponentInParent<Inventory_Managment>().Inventory[slot]; 
+        inventory_Managment.Inventory[slot] = "null";
         
         
         }
