@@ -25,17 +25,20 @@ public class Health : MonoBehaviour
     public SpriteRenderer Main_Menu_SpriteRenderer;
     public Vector3 x;
     public float health;
+    public float max_health;
     
     void Start(){
         health = inventory_Managment.zycie;
-        zycie_poczatkowe = health;
+        max_health = inventory_Managment.max_zycie;
         Vector3 x = gracz.position;
     }
     
     
     void Update(){
         health = inventory_Managment.zycie;
-        image.fillAmount = health/inventory_Managment.max_zycie;
+        max_health = inventory_Managment.max_zycie;
+        float d = health/max_health;
+        image.fillAmount = d;
         if (health == 0) {
             death_image.SetActive(true);
             textMeshPro.enabled = false;

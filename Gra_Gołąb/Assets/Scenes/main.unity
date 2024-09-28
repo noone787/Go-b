@@ -1288,6 +1288,7 @@ MonoBehaviour:
   Main_Menu_SpriteRenderer: {fileID: 0}
   x: {x: 0, y: 0, z: 0}
   health: 0
+  max_health: 0
 --- !u!114 &89734544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8845,6 +8846,7 @@ MonoBehaviour:
   Main_Menu_SpriteRenderer: {fileID: 0}
   x: {x: 0, y: 0, z: 0}
   health: 0
+  max_health: 0
 --- !u!114 &882221414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20014,9 +20016,10 @@ MonoBehaviour:
   dodanie_uzbrojenie: 
   dodanie: 
   max_zycie: 0
+  attack_speed: 1
   zycie: 100
   obrona: 0
-  atak: 10
+  atak: 0
 --- !u!1 &1898157208
 GameObject:
   m_ObjectHideFlags: 0
