@@ -2845,7 +2845,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1165692194}
   m_Father: {fileID: 1896824423}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2906,8 +2907,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 0
   miejsce: 
-  x: 1
-  sprite: {fileID: 21300000, guid: 459cb1b180b71c54c9fbd6f64d9d01f5, type: 3}
 --- !u!1 &242653409
 GameObject:
   m_ObjectHideFlags: 0
@@ -3636,8 +3635,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 10
   miejsce: 
-  x: 1
-  sprite: {fileID: 0}
 --- !u!1 &315413073
 GameObject:
   m_ObjectHideFlags: 0
@@ -3813,8 +3810,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 9
   miejsce: 
-  x: 1
-  sprite: {fileID: 0}
 --- !u!224 &327835549 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7175612923435950813, guid: f071bf070acd84b4db1ce2ad33d73bfa, type: 3}
@@ -5289,8 +5284,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 6
   miejsce: 
-  x: 1
-  sprite: {fileID: 0}
 --- !u!1 &529241214
 GameObject:
   m_ObjectHideFlags: 0
@@ -9137,8 +9130,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 8
   miejsce: 
-  x: 1
-  sprite: {fileID: 0}
 --- !u!4 &902107869 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8559749084512762968, guid: ee98e2c403b118e4899a3eeaf5bddb9a, type: 3}
@@ -11299,8 +11290,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 2
   miejsce: 
-  x: 1
-  sprite: {fileID: 0}
 --- !u!1 &1094878844
 GameObject:
   m_ObjectHideFlags: 0
@@ -11638,8 +11627,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 7
   miejsce: 
-  x: 1
-  sprite: {fileID: 0}
 --- !u!1 &1113073741
 GameObject:
   m_ObjectHideFlags: 0
@@ -12347,8 +12334,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 1
   miejsce: 
-  x: 1
-  sprite: {fileID: 0}
 --- !u!1 &1157879790
 GameObject:
   m_ObjectHideFlags: 0
@@ -12479,6 +12464,103 @@ Transform:
   m_Children: []
   m_Father: {fileID: 699352762}
   m_LocalEulerAnglesHint: {x: -0.689, y: 0.516, z: -17.954}
+--- !u!1 &1165692193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1165692194}
+  - component: {fileID: 1165692196}
+  - component: {fileID: 1165692195}
+  - component: {fileID: 1165692197}
+  m_Layer: 0
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1165692194
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165692193}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 0.95, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 234712376}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 4.716, y: -2.3579}
+  m_SizeDelta: {x: 98.9521, y: 90.6233}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1165692195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165692193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1165692196
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165692193}
+  m_CullTransparentMesh: 1
+--- !u!114 &1165692197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165692193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e6c1da58a5cf7741a7ab13e13dcf195, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: 459cb1b180b71c54c9fbd6f64d9d01f5, type: 3}
+  - {fileID: 21300000, guid: 459cb1b180b71c54c9fbd6f64d9d01f5, type: 3}
+  - {fileID: 21300000, guid: 459cb1b180b71c54c9fbd6f64d9d01f5, type: 3}
+  - {fileID: 21300000, guid: 459cb1b180b71c54c9fbd6f64d9d01f5, type: 3}
+  - {fileID: 21300000, guid: 459cb1b180b71c54c9fbd6f64d9d01f5, type: 3}
+  - {fileID: 21300000, guid: 459cb1b180b71c54c9fbd6f64d9d01f5, type: 3}
+  sprite: {fileID: 0}
+  image: {fileID: 1165692195}
 --- !u!1 &1184694785
 GameObject:
   m_ObjectHideFlags: 0
@@ -13798,8 +13880,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 3
   miejsce: 
-  x: 1
-  sprite: {fileID: 0}
 --- !u!1 &1333660637
 GameObject:
   m_ObjectHideFlags: 0
@@ -17211,8 +17291,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 11
   miejsce: 
-  x: 1
-  sprite: {fileID: 0}
 --- !u!1 &1639932794
 GameObject:
   m_ObjectHideFlags: 0
@@ -18458,8 +18536,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 5
   miejsce: 
-  x: 1
-  sprite: {fileID: 0}
 --- !u!1 &1748084809
 GameObject:
   m_ObjectHideFlags: 0
@@ -20340,6 +20416,13 @@ MonoBehaviour:
   - null
   - null
   - null
+  "Lista_Przedmiot\xF3w":
+  - miecz1
+  - miecz2
+  - armor1
+  - armor2
+  - pierscien1
+  - pierscien2
   Lista_Mieczy:
   - miecz1
   - miecz2
@@ -21781,8 +21864,6 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 4
   miejsce: 
-  x: 1
-  sprite: {fileID: 0}
 --- !u!1 &2002027533
 GameObject:
   m_ObjectHideFlags: 0

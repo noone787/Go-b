@@ -9,7 +9,6 @@ public class Button_Uzbrojenie : MonoBehaviour
     public Button button;
     public int slot;
     
-
     void Start() {
         button.GetComponent<Button>();
     }

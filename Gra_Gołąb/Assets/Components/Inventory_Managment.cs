@@ -12,6 +12,8 @@ public class Inventory_Managment : MonoBehaviour
                                    "null","null","null","null",
                                    "null","null","null","null",
                                 };
+    // miecze, zbroje, pierscienie PAMIETAC ABY W "IMAGE ITEM" TO ZMIENIAC
+    public String[] Lista_Przedmiotów = {"miecz1","miecz2","armor1","armor2","pierscien1","pierscien2"};
     public String[] Lista_Mieczy = {"miecz1","miecz2"};
     // statystyki (atak, attackspeed)
     public Double[] Stat_mieczy = {10,  15}; // atak
