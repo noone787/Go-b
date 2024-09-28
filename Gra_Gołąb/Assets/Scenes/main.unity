@@ -2906,6 +2906,8 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 0
   miejsce: 
+  x: 1
+  sprite: {fileID: 21300000, guid: 459cb1b180b71c54c9fbd6f64d9d01f5, type: 3}
 --- !u!1 &242653409
 GameObject:
   m_ObjectHideFlags: 0
@@ -3634,6 +3636,8 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 10
   miejsce: 
+  x: 1
+  sprite: {fileID: 0}
 --- !u!1 &315413073
 GameObject:
   m_ObjectHideFlags: 0
@@ -3809,6 +3813,8 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 9
   miejsce: 
+  x: 1
+  sprite: {fileID: 0}
 --- !u!224 &327835549 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7175612923435950813, guid: f071bf070acd84b4db1ce2ad33d73bfa, type: 3}
@@ -5283,6 +5289,8 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 6
   miejsce: 
+  x: 1
+  sprite: {fileID: 0}
 --- !u!1 &529241214
 GameObject:
   m_ObjectHideFlags: 0
@@ -7569,7 +7577,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24.6, y: -142.7}
+  m_AnchoredPosition: {x: 24.6, y: -142}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &753991099
@@ -9129,6 +9137,8 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 8
   miejsce: 
+  x: 1
+  sprite: {fileID: 0}
 --- !u!4 &902107869 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8559749084512762968, guid: ee98e2c403b118e4899a3eeaf5bddb9a, type: 3}
@@ -11289,6 +11299,8 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 2
   miejsce: 
+  x: 1
+  sprite: {fileID: 0}
 --- !u!1 &1094878844
 GameObject:
   m_ObjectHideFlags: 0
@@ -11626,6 +11638,8 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 7
   miejsce: 
+  x: 1
+  sprite: {fileID: 0}
 --- !u!1 &1113073741
 GameObject:
   m_ObjectHideFlags: 0
@@ -12333,6 +12347,8 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 1
   miejsce: 
+  x: 1
+  sprite: {fileID: 0}
 --- !u!1 &1157879790
 GameObject:
   m_ObjectHideFlags: 0
@@ -13782,6 +13798,8 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 3
   miejsce: 
+  x: 1
+  sprite: {fileID: 0}
 --- !u!1 &1333660637
 GameObject:
   m_ObjectHideFlags: 0
@@ -17193,6 +17211,8 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 11
   miejsce: 
+  x: 1
+  sprite: {fileID: 0}
 --- !u!1 &1639932794
 GameObject:
   m_ObjectHideFlags: 0
@@ -18438,6 +18458,8 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 5
   miejsce: 
+  x: 1
+  sprite: {fileID: 0}
 --- !u!1 &1748084809
 GameObject:
   m_ObjectHideFlags: 0
@@ -19566,7 +19588,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24.6, y: -203.4}
+  m_AnchoredPosition: {x: 24.6, y: -200}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1806858206
@@ -21759,6 +21781,8 @@ MonoBehaviour:
   inventory_Managment: {fileID: 1896824424}
   slot: 4
   miejsce: 
+  x: 1
+  sprite: {fileID: 0}
 --- !u!1 &2002027533
 GameObject:
   m_ObjectHideFlags: 0

@@ -62,6 +62,8 @@ public class Inventory_Managment : MonoBehaviour
             for (int i = 0;i < 11;i++) {
                 if (Inventory[i] == "null") {
                     Inventory[i] = dodanie;
+                
+        
                     dodanie = "null";
                 }
             }

@@ -53,6 +53,7 @@ public class Buttom_Inventory : MonoBehaviour
         Console.WriteLine(Lista_Mieczy[0]);
     }
     public void ButtonClick() {
+        
         if (inventory_Managment.Inventory[slot] != "null") {
 
             
