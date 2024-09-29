@@ -97,6 +97,8 @@ public class Buttom_Inventory : MonoBehaviour
         
         }
 
+        
+
             
         }
         
