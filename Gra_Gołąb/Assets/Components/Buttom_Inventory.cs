@@ -38,6 +38,8 @@ public class Buttom_Inventory : MonoBehaviour
     Double[] Stat_pierscieni2 = {2,  0}; // obrona
     Double[] Stat_pierscieni3 = {0,  5}; // atak
     Double[] Stat_pierscieni4 = {0.2,  0.3}; // attack_speed
+
+    
     
     public Inventory_Managment inventory_Managment;
     void Start() {

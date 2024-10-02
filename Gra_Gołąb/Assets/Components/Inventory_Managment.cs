@@ -12,8 +12,12 @@ public class Inventory_Managment : MonoBehaviour
                                    "null","null","null","null",
                                    "null","null","null","null",
                                 };
-    // miecze, zbroje, pierscienie PAMIETAC ABY W "IMAGE ITEM" TO ZMIENIAC
+    // miecze, zbroje, pierscienie PAMIETAC ABY W "IMAGE ITEM" TO ZMIENIAC "STATYSTYKI_WYSWIETLAC"
     public String[] Lista_Przedmiotów = {"miecz1","miecz2","armor1","armor2","pierscien1","pierscien2"};
+    public int[] Lista_Przedmiotow_zycie = {0,0,10,30,10,0};
+    public Double[] Lista_Przedmiotow_atak= {10,15,0,0,0,5};
+    public Double[] Lista_Przedmiotow_obrona = {0,0,5,10,2,0};
+    public Double[] Lista_Przedmiotow_attack_speed= {1,0.5,0,0,0.2,0.3};
     public String[] Lista_Mieczy = {"miecz1","miecz2"};
     // statystyki (atak, attackspeed)
     public Double[] Stat_mieczy = {10,  15}; // atak
