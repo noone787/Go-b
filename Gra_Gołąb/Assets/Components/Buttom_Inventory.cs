@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Buttom_Inventory : MonoBehaviour
 {
     public Button button;
+    public Zarzadzanie zarzadzanie;
     private RectTransform rectTransform;
     public int slot;
     public string przedmiot1;
@@ -97,6 +98,11 @@ public class Buttom_Inventory : MonoBehaviour
             inventory_Managment.Inventory[slot] = "null";
         }
         
+        }
+        public void zarzadzanie_click() {
+            if (Input.GetMouseButton(1)) {
+                zarzadzanie.co = inventory_Managment.Inventory[slot];
+            }
         }
 
         
