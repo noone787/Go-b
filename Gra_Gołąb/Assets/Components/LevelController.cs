@@ -24,7 +24,7 @@ public class LevelController : MonoBehaviour
     
     void Update()
     {
-        if (itemCollector.obwarzanki == 5) {
+        if (itemCollector.obwarzanki >= 5) {
             itemCollector.obwarzanki = 0;
             poziom++;
             punkty_do_levelowania++;
