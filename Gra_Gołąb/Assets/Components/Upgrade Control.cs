@@ -10,9 +10,15 @@ public class UpgradeControl : MonoBehaviour
     // 3 to obrona
     // 4 to attack_speed
     public int zycie_procent;
-    public double obrona_procent;
-    public double atak_procent;
-    public double attack_speed_procent;
+    public int obrona_procent;
+    public int atak_procent;
+    public int attack_speed_procent;
+    void Start() {
+        zycie_procent = 0;
+        obrona_procent = 0;
+        atak_procent = 0;
+        attack_speed_procent = 0;
+    }
     void Update() {
         if (x != 0) {
             if (x == 1) {

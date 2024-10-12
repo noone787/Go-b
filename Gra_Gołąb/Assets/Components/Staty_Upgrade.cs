@@ -20,19 +20,19 @@ public class Staty_Upgrade : MonoBehaviour
     void Update() {
         if (co == 1) {
             dodatkowe_staty = upgradeControl.atak_procent;
-            tMP_Text.text = dodatkowe_staty.ToString();
+            tMP_Text.text = dodatkowe_staty.ToString() + "%";
         }
         else if (co == 2) {
             dodatkowe_staty = upgradeControl.zycie_procent;
-            tMP_Text.text = dodatkowe_staty.ToString();
+            tMP_Text.text = dodatkowe_staty.ToString() + "%";
         }
         else if (co == 3) {
             dodatkowe_staty = upgradeControl.obrona_procent;
-            tMP_Text.text = dodatkowe_staty.ToString();
+            tMP_Text.text = dodatkowe_staty.ToString() + "%";
         }
         else if (co == 4) {
             dodatkowe_staty = upgradeControl.attack_speed_procent;
-            tMP_Text.text = dodatkowe_staty.ToString();
+            tMP_Text.text = dodatkowe_staty.ToString() + "%";
         }
         
         
