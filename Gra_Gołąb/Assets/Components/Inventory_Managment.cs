@@ -47,6 +47,10 @@ public class Inventory_Managment : MonoBehaviour
     public float zycie = 100;
     public double obrona = 0;
     public double atak = 0;
+    public double attack_speed_dod;
+    public float zycie_dod;
+    public double obrona_dod;
+    public double atak_dod;
     public int x1;
     public int x2;
     public int x3;
