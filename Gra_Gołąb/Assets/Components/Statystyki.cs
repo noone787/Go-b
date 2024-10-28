@@ -12,17 +12,17 @@ public class Statystyki : MonoBehaviour
     public double obrona;
     public double zycie;
     void Update() {
-        atak = inventory_Managment.atak;
-        obrona = inventory_Managment.obrona;
-        zycie = inventory_Managment.zycie;
+        
+        
+        
         if (co == "obrona") {
-            tMP_Text.text = obrona.ToString();
+            tMP_Text.text = inventory_Managment.obrona.ToString();
         }
         else if (co == "atak") {
-            tMP_Text.text = atak.ToString();
+            tMP_Text.text = inventory_Managment.atak.ToString();
         }
         else if (co == "zycie") {
-            tMP_Text.text = zycie.ToString();
+            tMP_Text.text = inventory_Managment.zycie.ToString();
         }
         else {
             tMP_Text.text = "error";

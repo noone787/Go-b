@@ -5489,7 +5489,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476295232}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -21124,7 +21124,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1765403362}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -23047,6 +23047,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fff44d5f1fdbe5d4cadfa2dbf6e290ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  upgradeControl: {fileID: 1765403367}
   Inventory:
   - miecz1
   - null
@@ -23093,39 +23094,6 @@ MonoBehaviour:
   - 0
   - 0.2
   - 0.3
-  Lista_Mieczy:
-  - miecz1
-  - miecz2
-  Stat_mieczy:
-  - 10
-  - 15
-  Stat_mieczy2:
-  - 1
-  - 0.5
-  Lista_zbroi:
-  - armor1
-  - armor2
-  Stat_zbroi:
-  - 5
-  - 10
-  Stat_zbroi2: 0a0000001e000000
-  Lista_pierscieni:
-  - pierscien1
-  - pierscien2
-  Stat_pierscieni: 0a00000000000000
-  Stat_pierscieni2:
-  - 2
-  - 0
-  Stat_pierscieni3:
-  - 0
-  - 5
-  Stat_pierscieni4:
-  - 0.2
-  - 0.3
-  miecz: 
-  zbroja: 
-  pierscien1: 
-  pierscien2: 
   dodanie_uzbrojenie: 
   dodanie: 
   max_zycie: 0
@@ -23137,10 +23105,18 @@ MonoBehaviour:
   zycie_dod: 0
   obrona_dod: 0
   atak_dod: 0
-  x1: 0
-  x2: 0
-  x3: 0
-  x4: 0
+  attack_speed_dod1: 0
+  zycie_dod1: 0
+  obrona_dod1: 0
+  atak_dod1: 0
+  attack_speed_dod2: 0
+  zycie_dod2: 0
+  obrona_dod2: 0
+  atak_dod2: 0
+  attack_speed_dod3: 0
+  zycie_dod3: 0
+  obrona_dod3: 0
+  atak_dod3: 0
 --- !u!1 &1898157208
 GameObject:
   m_ObjectHideFlags: 0
