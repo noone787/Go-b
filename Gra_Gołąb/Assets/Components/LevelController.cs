@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using Microsoft.Unity.VisualStudio.Editor;
 using TMPro;
+using Unity.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -29,7 +30,8 @@ public class LevelController : MonoBehaviour
             poziom++;
             punkty_do_levelowania++;
         }
-        image.fillAmount = itemCollector.obwarzanki/5f ;
+        float x = itemCollector.obwarzanki;
+        image.fillAmount = x/5 ;
         textMeshPro.text = poziom.ToString();
     }
 }

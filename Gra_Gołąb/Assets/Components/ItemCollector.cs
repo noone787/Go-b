@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class ItemCollector : MonoBehaviour
 {
     public TMP_Text obwarzankiText;
-    public int obwarzanki = 0;
+    public float obwarzanki = 0;
 
     void Start()
     {
@@ -19,7 +19,7 @@ public class ItemCollector : MonoBehaviour
             if (collision.gameObject.CompareTag("obwarzanek"))
             {
                 Destroy(collision.gameObject);
-                obwarzanki++;
+                obwarzanki = obwarzanki + 1;
                 Debug.Log("obwarzanki:" + obwarzanki);
             }
         }
