@@ -22,7 +22,7 @@ public class PlayerJump : MonoBehaviour
     // Sound effect
     public AudioSource audioSource;
     public AudioClip sfx1;
-    void Start()
+    public void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         audioSource.clip = sfx1;
@@ -32,7 +32,7 @@ public class PlayerJump : MonoBehaviour
     
     // Faktyczny Skok
 
-    void Update(){
+    public void Update(){
         
         if (Input.GetKeyDown(KeyCode.Space)) {
             if (IsOnGround == true){

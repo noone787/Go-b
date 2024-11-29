@@ -127,7 +127,7 @@ public class Inventory_Managment : MonoBehaviour
                 
             }
         }
-        for (int i = 0;i < 7; i++) {
+        for (int i = 0;i < 6; i++) {
             if (Inventory[15] == Lista_Przedmiotów[i]) {
                 attack_speed_dod = Lista_Przedmiotow_attack_speed[i];
                 zycie_dod = Lista_Przedmiotow_zycie[i];
