@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float MovementSpeed = 5;
+    public bool Potrzebne_Do_Ataku = false;
     public Animator animator;
     public static bool PlayerDialogue = false;
     float movement;
@@ -29,11 +30,13 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("IsWalking", true);
             spriteRenderer.flipX = true;
+            Potrzebne_Do_Ataku = true;
         }
         if (movement < 0)
         {   
             animator.SetBool("IsWalking", true);
             spriteRenderer.flipX = false;
+            Potrzebne_Do_Ataku = false;
         }
         else if (movement == 0) {
             animator.SetBool("IsWalking", false);
